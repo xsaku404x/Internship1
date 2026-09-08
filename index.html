@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<style>
+	header {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+
+}
+</style>
+</head>
+<body>
+<header>
+    <h1 style="text-align:left">Captured Moments</h1>
+    <nav style="text-align: right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+<main class="gallery">
+    
+        <div class="card">
+            <img src="image1.jpg" alt="image 1" onclick="openImage(0)">
+        </div>
+
+        <div class="card">
+            <img src="image2.jpg" alt="Image 2" onclick="openImage(1)">
+        </div>
+
+        <div class="card">
+            <img src="image3.jpg" alt="Image 3" onclick="openImage(2)">
+        </div>
+
+        <div class="card">
+            <img src="image4.jpg" alt="Image 4" onclick="openImage(3)">
+        </div>
+
+        <div class="card">
+            <img src="image5.jpg" alt="Image 5" onclick="openImage(4)">
+        </div>
+
+        <div class="card">
+            <img src="image6.jpg" alt="Image 6" onclick="openImage(5)">
+        </div>
+
+        <div class="card">
+            <img src="image7.jpg" alt="Image 7" onclick="openImage(6)">
+        </div>
+
+        <div class="card">
+            <img src="image8.jpg" alt="Image 8" onclick="openImage(7)">
+        </div>
+        <div class="card">
+            <img src="image9.jpg" alt="Image 8" onclick="openImage(8)">
+        </div>
+        <div class="card">
+            <img src="image10.jpg" alt="Image 8" onclick="openImage(9)">
+        </div>
+        <div class="card">
+            <img src="image11.jpg" alt="Image 8" onclick="openImage(10)">
+        </div>
+        <div class="card">
+            <img src="image12.jpg" alt="Image 8" onclick="openImage(11)">
+        </div>
+
+ </main>
+
+    <!-- Full screen image preview -->
+<div id="imagePopup" class="popup">
+
+    <span class="close" onclick="closeImage()">×</span>
+
+    <button class="prev" onclick="previousImage()">❮</button>
+
+    <img id="popupImage">
+
+    <button class="next" onclick="nextImage()">❯</button>
+
+</div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>    
